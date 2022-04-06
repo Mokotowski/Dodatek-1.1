@@ -17,8 +17,8 @@ TaskPlayAnim(ped, "amb@world_human_cop_idles@male@base", "base", 8.0, 2.0, -1, 5
 Citizen.Wait(700)
 SetPedComponentVariation(GetPlayerPed(-1), 9, 4, 3, 2) --- nr 3 odpowiada za kolor kamizelki np 1 = czarny, 0 = szary itp
 ClearPedTasks(ped)
-SetPedArmour(PlayerPedId(), 20)
-Citizen.Wait(5000)
+SetPedArmour(PlayerPedId(), 50)
+Citizen.Wait(600000)
 ESX.ShowNotification('Twoja kamizelka właśnie się skończyła')
 SetPedArmour(PlayerPedId(), 0)
 SetPedComponentVariation(GetPlayerPed(-1), 9, 0, 0, 0)
